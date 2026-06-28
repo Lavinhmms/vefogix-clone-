@@ -1,23 +1,23 @@
 import Link from "next/link";
 
 const tools = [
-  { name: "XML Sitemap Extractor", desc: "Extract sitemaps from any website", icon: "🗺️", slug: null },
-  { name: "SEO Checklist", desc: "Complete SEO audit checklist", icon: "✅", slug: null },
-  { name: "Hyper Fill", desc: "Fill content gaps with AI", icon: "✍️", slug: null },
-  { name: "Competitor Guest Post Checker", desc: "Find where competitors publish", icon: "🔍", slug: null },
-  { name: "AMP Validator", desc: "Validate your AMP pages", icon: "⚡", slug: null },
+  { name: "XML Sitemap Extractor", desc: "Extract sitemaps from any website", icon: "🗺️", slug: "sitemap-extractor" },
+  { name: "SEO Checklist", desc: "Complete SEO audit checklist", icon: "✅", slug: "seo-checklist" },
+  { name: "Hyper Fill", desc: "Fill content gaps with AI", icon: "✍️", slug: "hyper-fill" },
+  { name: "Competitor Guest Post Checker", desc: "Find where competitors publish", icon: "🔍", slug: "competitor-guestpost-checker" },
+  { name: "AMP Validator", desc: "Validate your AMP pages", icon: "⚡", slug: "amp-validator" },
   { name: "Backlink Generator", desc: "Generate quality backlinks", icon: "🔗", slug: "backlink-generator" },
   { name: "Word Counter", desc: "Count words in your content", icon: "📝", slug: "word-counter" },
   { name: "Keyword Density Checker", desc: "Check keyword density", icon: "📊", slug: "keyword-density-checker" },
-  { name: "Keyword Suggestions", desc: "Find related keywords", icon: "💡", slug: null },
-  { name: "Schema Generator", desc: "Generate structured data", icon: "🏗️", slug: null },
-  { name: "Schema Validator", desc: "Validate your schema markup", icon: "✔️", slug: null },
-  { name: "Open Graph Generator", desc: "Generate OG meta tags", icon: "🖼️", slug: null },
-  { name: "Twitter Card Generator", desc: "Generate Twitter card tags", icon: "🐦", slug: null },
+  { name: "Keyword Suggestions", desc: "Find related keywords", icon: "💡", slug: "keyword-suggestions" },
+  { name: "Schema Generator", desc: "Generate structured data", icon: "🏗️", slug: "schema-generator" },
+  { name: "Schema Validator", desc: "Validate your schema markup", icon: "✔️", slug: "schema-validator" },
+  { name: "Open Graph Generator", desc: "Generate OG meta tags", icon: "🖼️", slug: "opengraph-generator" },
+  { name: "Twitter Card Generator", desc: "Generate Twitter card tags", icon: "🐦", slug: "twitter-card-generator" },
   { name: "Bulk DA/PA Checker", desc: "Check domain authority in bulk", icon: "📈", slug: "bulk-da-pa-checker" },
-  { name: "Bulk DR Checker", desc: "Check domain rating in bulk", icon: "📉", slug: null },
-  { name: "Image Alt Text Checker", desc: "Check image alt attributes", icon: "🖼️", slug: null },
-  { name: "Website Authority Checker", desc: "Check site authority metrics", icon: "🏆", slug: null },
+  { name: "Bulk DR Checker", desc: "Check domain rating in bulk", icon: "📉", slug: "bulk-dr-checker" },
+  { name: "Image Alt Text Checker", desc: "Check image alt attributes", icon: "🖼️", slug: "image-alt-checker" },
+  { name: "Website Authority Checker", desc: "Check site authority metrics", icon: "🏆", slug: "authority-checker" },
 ];
 
 export default function SEOTools() {
