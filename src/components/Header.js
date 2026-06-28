@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cartCount } from "@/lib/cart";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,6 +34,7 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
+          <LanguageToggle />
           <Link href="/signin" className="btn btn-outline">Sign In</Link>
           <Link href="/signin" className="btn btn-primary">Get Started</Link>
           <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

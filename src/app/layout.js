@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
 
 export const metadata = {
   title: "VefoGix - AI-Powered Link Building & Guest Post Marketplace",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main style={{ minHeight: "80vh" }}>{children}</main>
         <Footer />
+        <LiveChat />
       </body>
     </html>
   );
