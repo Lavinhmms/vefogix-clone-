@@ -1,9 +1,20 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { cartCount } from "@/lib/cart";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setCount(cartCount());
+    function handleCartUpdate() {
+      setCount(cartCount());
+    }
+    window.addEventListener("cart-updated", handleCartUpdate);
+    return () => window.removeEventListener("cart-updated", handleCartUpdate);
+  }, []);
 
   return (
     <header className="header">
@@ -18,6 +29,7 @@ export default function Header() {
           <Link href="/blogs">Blog</Link>
           <Link href="/publishers">Publishers</Link>
           <Link href="/buyers">Buyers</Link>
+          <Link href="/cart" className="cart-link">🛒{count > 0 && <span className="cart-badge">{count}</span>}</Link>
         </nav>
 
         <div className="header-actions">
